@@ -9,11 +9,44 @@ var project1 = {
     heading : 'project1',
     date : '18 feb 2018',
     content : 'project1'
-           
-            
-    
-
 };
+function createTemplate(data)
+{
+    var title = data.title;
+    var heading =data.heading;
+    var date = data.date;
+    var content = data.content;
+    
+    var htmltemplate = '
+    <html>
+    
+  <title>
+            ${title}
+        </title>
+        <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="container">
+        <div>
+            <a href="/">home</a>
+        </div>
+        <hr/>
+        <h3>
+            $(heading)
+        </h3>
+        <div>
+            $(date)
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</html>';
+
+
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
