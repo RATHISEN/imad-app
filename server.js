@@ -12,10 +12,10 @@ app.get('/project1',function(req,res){
 res.sendFile(path.join(__dirname, 'ui', 'project1.html'));
 });
 app.get('/project2',function(req,res){
-    res.send("project2 requested and will be served here");
+    res.sendFile(path.join(__dirname, 'ui', 'project2.html'));
 });
 app.get('/project3',function(req,res){
-    res.send("project3 requested and will be served here");
+    res.sendFile(path.join(__dirname, 'ui', 'project3.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
