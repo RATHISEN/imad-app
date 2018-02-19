@@ -8,18 +8,8 @@ var project1 = {
     title :'project1|rathi',
     heading : 'project1',
     date : '18 feb 2018',
-    content : '
-            <p>
-                This is content of project1.This is content of project1.This is content of project1.  This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.
-           </p>
-            <p>
-                This is content of project1.This is content of project1.This is content of project1.  This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.
-            </p>
-            <p>
-                This is content of project1.This is content of project1.This is content of project1.  This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.This is content of project1.
-            </p>'
-            
-            
+    content : 'project1'
+           
             
     
 
