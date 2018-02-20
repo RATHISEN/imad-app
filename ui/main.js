@@ -1,9 +1,12 @@
-console.log('Loaded!');
-var element = document.getElementById('maintext');
-element.innerHTML='new value';
-var img=document.getElementById('madi');
-img.onClick = function (){
-
-    img.style.marginLeft='200px';
-}
-
+// counter code
+var button = document.getElementById('counter');
+button.onclick = function () {
+  
+  
+  
+  
+  counter = counter +1;
+  var span = document.getElementById('count');
+  span.innerHTML = counter.toString();
+    
+};
