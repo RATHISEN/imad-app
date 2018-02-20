@@ -10,6 +10,19 @@ var project1 = {
     date : '18 feb 2018',
     content : 'project1 project1 project1'
 };
+var project2 = {
+    title :'project2|rathi',
+    heading : 'project2',
+    date : '19 feb 2018',
+    content : 'project2 project2 project2'
+};
+var project1 = {
+    title :'project3|rathi',
+    heading : 'project3',
+    date : '20 feb 2018',
+    content : 'project3 project3 project3'
+};
+
 function createTemplate(data)
 {
     var title = data.title;
@@ -55,11 +68,14 @@ app.get('/project1',function(req,res){
 res.send(createTemplate(project1));
 });
 app.get('/project2',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'project2.html'));
+res.send(createTemplate(project2));
 });
 app.get('/project3',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'project3.html'));
+res.send(createTemplate(project3));
 });
+
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
