@@ -4,25 +4,28 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var project1 = {
+var project={
+    
+
+  'project1': {
     title :'project1|rathi',
     heading : 'project1',
     date : '18 feb 2018',
     content : 'project1 project1 project1 project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1project1 project1 project1'
-};
-var project2 = {
+},
+  'project2' : {
     title :'project2|rathi',
     heading : 'project2',
     date : '19 feb 2018',
     content : 'project2 project2 project2'
-};
-var project3 = {
+},
+   'project3' : {
     title :'project3|rathi',
     heading : 'project3',
     date : '20 feb 2018',
     content : 'project3 project3 project3'
-};
-
+}
+}
 function createTemplate(data)
 {
     var title = data.title;
@@ -64,8 +67,9 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/project1',function(req,res){
-res.send(createTemplate(project1));
+app.get('/:projectname',function(req,res){
+    var projectname= req.params.projectname;
+res.send(createTemplate(projects[projectname]));
 });
 app.get('/project2',function(req,res){
 res.send(createTemplate(project2));
