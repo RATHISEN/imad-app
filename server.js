@@ -71,7 +71,7 @@ app.get('/:projectname',function(req,res){
     var projectname= req.params.projectname;
 res.send(createTemplate(project[projectname]));
 });
-var count = 0;
+var counter = 0;
 
 app.get('/counter',function( req, res){
         counter = counter + 1;
