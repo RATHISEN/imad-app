@@ -1,9 +1,9 @@
 console.log('Loaded!');
 var element = document.getElementById('maintext');
 element.innerHTML='new value';
-var pic=document.getElementById('picd');
-pic.onClick = function (){
+var img=document.getElementById('madi');
+img.onClick = function (){
 
-    pic.style.marginLeft='200px';
+    img.style.marginLeft='200px';
 }
 
