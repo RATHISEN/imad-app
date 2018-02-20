@@ -69,7 +69,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:projectname',function(req,res){
     var projectname= req.params.projectname;
-res.send(createTemplate(projects[projectname]));
+res.send(createTemplate(project[projectname]));
 });
 
 
