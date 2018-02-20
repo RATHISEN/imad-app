@@ -71,12 +71,6 @@ app.get('/:projectname',function(req,res){
     var projectname= req.params.projectname;
 res.send(createTemplate(projects[projectname]));
 });
-app.get('/project2',function(req,res){
-res.send(createTemplate(project2));
-});
-app.get('/project3',function(req,res){
-res.send(createTemplate(project3));
-});
 
 
 
