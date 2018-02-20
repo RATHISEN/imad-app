@@ -71,8 +71,12 @@ app.get('/:projectname',function(req,res){
     var projectname= req.params.projectname;
 res.send(createTemplate(project[projectname]));
 });
+var count = 0;
 
-
+app.get('/counter',function( req, res){
+        counter = counter + 1;
+        res.send(counter.toString());
+})
 
 
 app.get('/ui/style.css', function (req, res) {
