@@ -16,7 +16,7 @@ var project2 = {
     date : '19 feb 2018',
     content : 'project2 project2 project2'
 };
-var project1 = {
+var project3 = {
     title :'project3|rathi',
     heading : 'project3',
     date : '20 feb 2018',
