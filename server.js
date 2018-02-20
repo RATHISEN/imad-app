@@ -8,7 +8,7 @@ var project1 = {
     title :'project1|rathi',
     heading : 'project1',
     date : '18 feb 2018',
-    content : 'project1'
+    content : 'project1 project1 project1'
 };
 function createTemplate(data)
 {
@@ -33,10 +33,10 @@ function createTemplate(data)
         </div>
         <hr/>
         <h3>
-            $(heading)
+            ${heading}
         </h3>
         <div>
-            $(date)
+            ${date}
         </div>
         <div>
             
