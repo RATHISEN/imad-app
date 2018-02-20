@@ -67,16 +67,18 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:projectname',function (req,res){
-    var projectname= req.params.projectname;
-res.send(createTemplate(project[projectname]));
-});
-
 var counter = 0;
 app.get('/counter', function ( req, res) {
         counter = counter + 1;
         res.send(counter.toString());
 });
+
+
+app.get('/:projectname',function (req,res){
+    var projectname= req.params.projectname;
+res.send(createTemplate(project[projectname]));
+});
+
 
 
 app.get('/ui/style.css', function (req, res) {
