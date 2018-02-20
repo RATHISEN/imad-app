@@ -17,13 +17,13 @@ var project={
     title :'project2|rathi',
     heading : 'project2',
     date : '19 feb 2018',
-    content : 'project2 project2 project2'
+    content : 'project2 code reduced project2 project2'
 },
    'project3' : {
     title :'project3|rathi',
     heading : 'project3',
     date : '20 feb 2018',
-    content : 'project3 project3 project3'
+    content : 'project3 code reduced project3 project3'
 }
 }
 function createTemplate(data)
